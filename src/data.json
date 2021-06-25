@@ -1,3 +1,9 @@
 {
-  "intro": { "name": "Darius Rainys", "email": "darius@nite.lt", "phone": "+37069942699" }
+  "intro": { "name": "Darius Rainys", "email": "darius@nite.lt", "phone": "+37069942699" },
+  "skills": [
+    { "name": "HTML5", "level": 4 },
+    { "name": "CSS3", "level": 3 },
+    { "name": "React.js", "level": 3 },
+    { "name": "Node.js", "level": 3 }
+  ]
 }
