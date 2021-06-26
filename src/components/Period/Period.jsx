@@ -3,7 +3,7 @@ import React from 'react';
 import * as S from './Period.style';
 
 const Period = ({ dateFrom, dateTo, title, description }) => (
-  <S.PeriodBlock>
+  <S.PeriodBlock key={title}>
     <S.Title>{title}</S.Title>
     <S.Interval>
       {dateFrom}-{dateTo}

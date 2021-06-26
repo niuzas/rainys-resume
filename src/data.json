@@ -1,5 +1,5 @@
 {
-  "intro": { "name": "Darius Rainys", "email": "darius@nite.lt", "phone": "+37069942699" },
+  "intro": { "name": "Darius Rainys", "email": "darius.rainys@gmail.com", "phone": "+37069942699" },
   "skills": [
     { "name": "HTML5", "level": 4 },
     { "name": "CSS3", "level": 3 },
@@ -24,6 +24,27 @@
       "dateFrom": "2018",
       "dateTo": "now",
       "description": "Windows, Linux servers administration"
+    }
+  ],
+  "knowledge": ["Git", "Amazon S3", "SQL", "Oracle", "PL/SQL", "MongoDB", "MySQL", "Linux"],
+  "education": [
+    {
+      "title": "Kaunas University of Technology (KTU)",
+      "dateFrom": "1995 September",
+      "dateTo": "1999 June",
+      "description": "Electronics technology, bachelor degree"
+    },
+    {
+      "title": "Vilnius Gediminas Technical University (VGTU)",
+      "dateFrom": "1999 September",
+      "dateTo": "2019 June",
+      "description": "IT engineering, master degree"
+    },
+    {
+      "title": "Codeacademy",
+      "dateFrom": "2020 November",
+      "dateTo": "2021 July",
+      "description": "Javascript Fullstack courses"
     }
   ]
 }
