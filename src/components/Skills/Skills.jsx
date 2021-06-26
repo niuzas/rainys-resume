@@ -4,11 +4,15 @@ import * as S from './Skills.style';
 import SkillLevel from '../SkillLevel/SkillLevel';
 
 const Skills = ({ skills }) => {
-  const skillsGenerated = (skills) => {
+  const skillsLevelsGeneration = (skills) => {
     const skillsArr = skills.reduce(
       (skills, skillData) => [
         ...skills,
-        <SkillLevel key={skillData.name} skillLevelNumber={skillData.level}></SkillLevel>,
+        <SkillLevel
+          key={skillData.name}
+          skillLevelName={skillData.name}
+          skillLevelNumber={skillData.level}
+        ></SkillLevel>,
       ],
       []
     );
@@ -19,10 +23,10 @@ const Skills = ({ skills }) => {
     <S.SkillsBlock>
       <S.SkillsNames>
         {skills.map((skill) => (
-          <div>{skill.name}:</div>
+          <div key={skill.name}>{skill.name}:</div>
         ))}
       </S.SkillsNames>
-      <S.SkillsLevels>{skillsGenerated(skills)}</S.SkillsLevels>
+      <S.SkillsLevels>{skillsLevelsGeneration(skills)}</S.SkillsLevels>
     </S.SkillsBlock>
   );
 };

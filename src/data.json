@@ -5,5 +5,25 @@
     { "name": "CSS3", "level": 3 },
     { "name": "React.js", "level": 3 },
     { "name": "Node.js", "level": 3 }
+  ],
+  "experience": [
+    {
+      "title": "Systems administration",
+      "dateFrom": "1996",
+      "dateTo": "2006",
+      "description": "Windows, Linux servers administration"
+    },
+    {
+      "title": "IT security",
+      "dateFrom": "2002",
+      "dateTo": "2019",
+      "description": "Windows, Linux servers administration"
+    },
+    {
+      "title": "Development",
+      "dateFrom": "2018",
+      "dateTo": "now",
+      "description": "Windows, Linux servers administration"
+    }
   ]
 }

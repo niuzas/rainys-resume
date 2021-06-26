@@ -4,6 +4,7 @@ import 'normalize.css';
 import Section from './components/Section/Section';
 import Intro from './components/Intro/Intro';
 import Skills from './components/Skills/Skills';
+import Experience from './components/Experience/Experience';
 
 import data from './data.json';
 
@@ -18,6 +19,9 @@ function App() {
       </Section>
       <Section sectionTitle="Skills">
         <Skills skills={data.skills}></Skills>
+      </Section>
+      <Section sectionTitle="Experience">
+        <Experience experience={data.experience}></Experience>
       </Section>
     </>
   );
