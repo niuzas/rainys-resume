@@ -9,4 +9,5 @@ export const SectionBlock = styled.section`
   background-color: whitesmoke;
   border-radius: 10px;
   margin: 1rem;
+  padding: 1rem;
 `;

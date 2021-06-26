@@ -1,7 +1,9 @@
 import React from 'react';
+import SkillLevel from '../../molecules/SkillLevel/SkillLevel';
+
 import * as S from './Skills.style';
 
-import SkillLevel from '../SkillLevel/SkillLevel';
+
 
 const Skills = ({ skills }) => {
   const skillsLevelsGeneration = (skills) => {

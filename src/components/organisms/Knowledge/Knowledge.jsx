@@ -1,5 +1,5 @@
 import React from 'react';
-import Item from '../Item/Item';
+import Item from '../../molecules/Item/Item';
 
 import * as S from './Knowledge.style';
 

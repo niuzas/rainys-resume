@@ -1,5 +1,5 @@
 import React from 'react';
-import Period from '../Period/Period';
+import Period from '../../molecules/Period/Period';
 
 
 import * as S from './Experience.style';
