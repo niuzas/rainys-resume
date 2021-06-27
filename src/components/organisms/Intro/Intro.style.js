@@ -15,24 +15,26 @@ export const IntroBlock = styled.div`
   color: gray;
 `;
 export const IntroName = styled.span`
-  margin: 0.5rem;
+  margin: 1rem;
   font-size: 2rem;
   font-weight: 700;
 `;
 export const IntroTitle = styled.span`
   font-size: 1.3rem;
   font-weight: 600;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
 `;
 
 export const IntroEmail = styled.a`
   font-size: 1.3rem;
   font-weight: 600;
   margin: 0.2rem;
+  text-decoration: none;
 `;
 
 export const IntroPhone = styled.a`
   font-size: 1.3rem;
   font-weight: 600;
   margin: 0.2rem;
+  text-decoration: none;
 `;

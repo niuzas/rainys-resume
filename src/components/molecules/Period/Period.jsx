@@ -6,7 +6,7 @@ const Period = ({ dateFrom, dateTo, title, description }) => (
   <S.PeriodBlock key={title}>
     <S.Title>{title}</S.Title>
     <S.Interval>
-      {dateFrom}-{dateTo}
+      {dateFrom} - {dateTo}
     </S.Interval>
     <S.Description>{description}</S.Description>
   </S.PeriodBlock>
