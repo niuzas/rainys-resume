@@ -14,57 +14,59 @@ export const GridLayout = styled.div`
   width: 600px;
   display: grid;
   grid-template-areas:
-    'intro'
-    'skills'
-    'knowledge'
-    'education'
-    'experience';
+    'top'
+    'left'
+    'right'
+    'footer';
   grid-template-rows: auto;
   grid-template-columns: auto;
   justify-content: center;
-  gap: 0.5rem;
+  gap: 1rem;
   @media only screen and (min-width: 992px) {
     width: 950px;
     display: grid;
     grid-template-areas:
-      'intro skills'
-      'intro knowledge'
-      'education experience';
+      'top  top'
+      'left right'
+      'footer footer';
     grid-template-rows: auto;
     grid-template-columns: 5fr 5fr;
     justify-content: center;
-    gap: 0.5rem;
-    
+    gap: 1rem;
   }
 `;
 
-export const Intro = styled.div`
-  grid-area: intro;
+export const TopArea = styled.div`
+  grid-area: top;
+  margin-top: 1rem;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
 `;
-export const Skills = styled.div`
-  grid-area: skills;
+
+export const LeftArea = styled.div`
+  grid-area: left;
   display: flex;
-  justify-content: center;
-  align-items: center
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
 `;
-export const Knowledge = styled.div`
-  grid-area: knowledge;
+export const RightArea = styled.div`
+  grid-area: right;
   display: flex;
-  justify-content: center;
-  align-items: center
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
 `;
-export const Education = styled.div`
-  grid-area: education;
+
+export const FooterArea = styled.div`
+  grid-area: footer;
+  margin-top: 1rem;
   display: flex;
-  justify-content: center;
-  align-items: center
-`;
-export const Experience = styled.div`
-  grid-area: experience;
-  display: flex;
-  justify-content: center;
-  align-items: center
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 `;

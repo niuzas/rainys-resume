@@ -13,7 +13,26 @@ export const IntroBlock = styled.div`
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
     'Helvetica Neue', sans-serif;
   color: gray;
+  gap: 2rem;
+  @media only screen and (min-width: 992px) {
+    flex-direction: row;
+  }
 `;
+
+export const PhotoArea = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const InfoArea = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
 export const IntroName = styled.span`
   margin: 1rem;
   font-size: 2rem;

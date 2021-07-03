@@ -7,11 +7,10 @@ import Skills from '../organisms/Skills/Skills';
 import Experience from '../organisms/Experience/Experience';
 import Knowledge from '../organisms/Knowledge/Knowledge';
 import Education from '../organisms/Education/Education';
+import Footer from '../organisms/Footer/Footer';
 
 import data from '../../data/data.json';
 import profilePhoto from '../../static/profile_photo.jpg';
-
-
 
 import * as S from './DefaultTemplate.style';
 
@@ -19,7 +18,7 @@ const DefaultTemplate = () => {
   return (
     <S.TemplateBlock>
       <S.GridLayout>
-        <S.Intro>
+        <S.TopArea>
           <Section sectionTitle="">
             <Intro
               photo={profilePhoto}
@@ -29,31 +28,29 @@ const DefaultTemplate = () => {
               title={data.intro.title}
             ></Intro>
           </Section>
-        </S.Intro>
-
-        <S.Skills>
+        </S.TopArea>
+        <S.LeftArea>
           <Section sectionTitle="Main skills">
             <Skills skills={data.skills}></Skills>
           </Section>
-        </S.Skills>
-
-        <S.Experience>
-          <Section sectionTitle="Experience">
-            <Experience experience={data.experience}></Experience>
-          </Section>
-        </S.Experience>
-
-        <S.Knowledge>
-          <Section sectionTitle="Knowledge">
-            <Knowledge knowledge={data.knowledge}></Knowledge>
-          </Section>
-        </S.Knowledge>
-
-        <S.Education>
           <Section sectionTitle="Education">
             <Education education={data.education}></Education>
           </Section>
-        </S.Education>
+        </S.LeftArea>
+
+        <S.RightArea>
+          <Section sectionTitle="Knowledge">
+            <Knowledge knowledge={data.knowledge}></Knowledge>
+          </Section>
+
+          <Section sectionTitle="Experience">
+            <Experience experience={data.experience}></Experience>
+          </Section>
+        </S.RightArea>
+
+        <S.FooterArea>
+          <Footer></Footer>
+        </S.FooterArea>
       </S.GridLayout>
     </S.TemplateBlock>
   );

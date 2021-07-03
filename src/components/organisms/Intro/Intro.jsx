@@ -8,11 +8,15 @@ const Intro = ({ photo, name, email, phone, title }) => {
 
   return (
     <S.IntroBlock>
-      <S.IntroPhoto src={photo} alt="" />
-      <S.IntroName>{name}</S.IntroName>
-      <S.IntroTitle>{title}</S.IntroTitle>
-      <S.IntroEmail href={emailLink}>{email}</S.IntroEmail>
-      <S.IntroPhone href={phoneLink}>{phone}</S.IntroPhone>
+      <S.PhotoArea>
+        <S.IntroPhoto src={photo} alt="" />
+      </S.PhotoArea>
+      <S.InfoArea>
+        <S.IntroName>{name}</S.IntroName>
+        <S.IntroTitle>{title}</S.IntroTitle>
+        <S.IntroEmail href={emailLink}>{email}</S.IntroEmail>
+        <S.IntroPhone href={phoneLink}>{phone}</S.IntroPhone>
+      </S.InfoArea>
     </S.IntroBlock>
   );
 };
