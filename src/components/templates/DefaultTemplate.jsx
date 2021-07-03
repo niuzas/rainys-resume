@@ -11,6 +11,8 @@ import Education from '../organisms/Education/Education';
 import data from '../../data/data.json';
 import profilePhoto from '../../static/profile_photo.jpg';
 
+
+
 import * as S from './DefaultTemplate.style';
 
 const DefaultTemplate = () => {

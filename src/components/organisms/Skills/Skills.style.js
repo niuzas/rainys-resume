@@ -13,11 +13,26 @@ export const SkillsBlock = styled.div`
   gap: 1rem;
 `;
 
+export const SkillLogo = styled.img`
+  height: 30px;
+  margin: 0.3rem;
+  border: 1px dotted gray;
+`;
+
 export const SkillsNames = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
+`;
+
+export const SkillName = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  margin: 0.3rem;
 `;
 
 export const SkillsLevels = styled.div`

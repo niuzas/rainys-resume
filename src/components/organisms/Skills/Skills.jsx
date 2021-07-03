@@ -3,8 +3,6 @@ import SkillLevel from '../../molecules/SkillLevel/SkillLevel';
 
 import * as S from './Skills.style';
 
-
-
 const Skills = ({ skills }) => {
   const skillsLevelsGeneration = (skills) => {
     const skillsArr = skills.reduce(
@@ -25,7 +23,11 @@ const Skills = ({ skills }) => {
     <S.SkillsBlock>
       <S.SkillsNames>
         {skills.map((skill) => (
-          <div key={skill.name}>{skill.name}:</div>
+          <S.SkillName key={skill.name}>
+            {skill.name}{' '}
+            <S.SkillLogo src={process.env.PUBLIC_URL + '/logos/' + skill.name.replace('.', '') + '.png'}></S.SkillLogo>{' '}
+            :
+          </S.SkillName>
         ))}
       </S.SkillsNames>
       <S.SkillsLevels>{skillsLevelsGeneration(skills)}</S.SkillsLevels>

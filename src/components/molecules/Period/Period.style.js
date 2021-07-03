@@ -12,7 +12,7 @@ export const Interval = styled.div`
 `;
 
 export const Title = styled.div`
-  font-weight: 500;
+  font-weight: 700;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
     'Helvetica Neue', sans-serif;
 `;
