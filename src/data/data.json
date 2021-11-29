@@ -25,12 +25,6 @@
       "dateFrom": "2002",
       "dateTo": "2019",
       "description": "IT security management and technical audits, penetration testin, technical and  organisational security controls implementation"
-    },
-    {
-      "title": "AB Šiaulių bankas, digital channells analytics",
-      "dateFrom": "2021 May",
-      "dateTo": "Now",
-      "description": "PL/SQL procedures and function development, Tomcat IB(Internet Banking) apllications third level supporting, integrations tests (Autotest) supporting, IB app (React) and IB RESTful API testing"
     }
   ],
   "knowledge": [
